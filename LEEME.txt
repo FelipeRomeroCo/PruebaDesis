@@ -1,0 +1,13 @@
+Bienvedinos a mi proyecto para la prueba de diagnóstico en Desis.cl
+
+Para poder instalar el proyecto pueden importar la base de datos ubicada en el archivo voting_system.sql
+o también pueden ejecutar el script llamado voting_system_script.sql para crear una nueva base de datos 
+sin datos de registros de votación. Ambos archivos se encuentran en la carpeta SQL del proyecto.
+Además deberán ejecutar los archivos en un entorno de servidor sql, utilizando xampp, por ejemplo.
+
+Para poder conectarse a su servidor, deberán modificar los valores de las variables $server_name, $user_name, 
+$password y $db_name, ubicadas en el archivo config.php ubicado en la raíz del proyecto.
+
+Las versiones utilizadas de PHP y Base de datos utilizadas en este proyecto son:
+    PHP: 7.4.33
+    Base de datos: 10.4.27-MariaDB
