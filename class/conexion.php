@@ -13,18 +13,6 @@ class Conexion {
         }
     }
 
-    public function pdo($sql, $parameters)  {
-        $result = $this->conexion->prepare($sql);
-
-        if (sizeof($parameters))    {
-            $types = str_repeat("s", sizeof($parameters));
-            $result->bind_param($types, ...$parameters);
-        }
-        $result->execute();
-        $result = $result->get_result();
-        return $result;
-    }
-
     public function query($sql) {
         $result = $this->conexion->query($sql);
         if(!$result) {
